@@ -1,4 +1,5 @@
-# mysql -version 8.0.36
+## Mysql Installation
+### Version 8.0.36
 `sudo -i`
 ```
 sudo apt update
