@@ -44,3 +44,12 @@ CREATE USER 'username'@'22.22.22.22' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON *.* TO 'username'@'22.22.22.22' WITH GRANT OPTION;
 ```
 `FLUSH PRIVILEGES;`
+
+> GCP Note: Create a firewall to allow TCP network traffic to mysql instance on port 3306
+> Check public ip is enabled
+## Check MySQL Bind Address:
+goto root user `sudo -i`
+```
+/etc/mysql/mysql.conf.d/mysqld.cnf
+```
+>Ensure that the bind-address parameter is set to either 0.0.0.0 (to listen on all interfaces) or the specific IP address of the VM. If it's set to 127.0.0.1, MySQL will only listen for connections on the localhost interface.
