@@ -39,6 +39,7 @@ mysql -u root -p
 CREATE USER 'username'@'22.22.22.22' IDENTIFIED BY 'password';
 ```
 > Grant previlige to the users
-```GRANT ALL PRIVILEGES ON *.* TO 'username'@'22.22.22.22' WITH GRANT OPTION;
+```
+GRANT ALL PRIVILEGES ON *.* TO 'username'@'22.22.22.22' WITH GRANT OPTION;
 ```
 `FLUSH PRIVILEGES;`
